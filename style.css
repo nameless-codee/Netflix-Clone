@@ -107,24 +107,36 @@ img {
 	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.25;
-	margin: 0 0 1rem;
+	margin: 0 0 1.3rem;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 7fr 3fr;
+	gap: 0.5rem;
 }
 
 .form-input {
-	height: 40px;
+	height: auto;
+	width: 100%;
 	border-radius: 5px;
 	border: 1px solid #ccc;
 	padding: 0 0.5rem;
 	font-size: 1rem;
 	font-weight: 400;
 	color: #fff;
-	outline: none;
+}
+
+.form button {
+	width: 100%;
 }
 
 /* Buttons */
 .btn {
 	font-family: "Poppins", sans-serif;
-	display: inline-block;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	background: var(--primary-color);
 	color: #fff;
 	padding: 0.4rem 1.3rem;
