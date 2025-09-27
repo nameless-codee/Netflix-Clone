@@ -125,13 +125,23 @@ img {
 	font-size: 1rem;
 	font-weight: 400;
 	color: #fff;
+	background-color: rgba(18, 18, 18, 0.5);
+}
+
+.form-input::placeholder {
+	padding-left: 0.5rem;
+	color: rgb(206, 206, 206);
+}
+
+.form-input:focus::placeholder {
+	color: transparent;
 }
 
 .form button {
 	width: 100%;
 }
 
-/* Buttons */
+/* ==== Buttons ==== */
 .btn {
 	font-family: "Poppins", sans-serif;
 	display: inline-flex;
