@@ -174,7 +174,6 @@ img {
 
 .tabs p {
 	font-size: 1rem;
-	padding-top: 0.5rem;
 }
 
 .tabs .container i {
@@ -192,7 +191,57 @@ img {
 }
 
 .tab-border {
-	border-bottom: var(--primary-color) 4px solid;
+	border-bottom: var(--primary-color) 3px solid;
+}
+
+/* ==== Tab Content ==== */
+#tab-1-content .tab-content-inner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.tab-content-inner {
+	margin: 2rem;
+	padding: 0 2rem;
+}
+
+.tab-content-inner img {
+	width: 70%;
+	justify-self: end;
+}
+
+#tab-2-content .tab-2-content-top {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom {
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* ==== Font Styles ==== */
+.text-md {
+	font-size: 1.1rem;
+}
+
+.text-lg {
+	font-size: 1.2rem;
+}
+
+.text-dark {
+	color: rgb(122, 122, 122);
 }
 
 /* ==== Buttons ==== */
