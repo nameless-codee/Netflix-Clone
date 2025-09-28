@@ -414,4 +414,8 @@ img {
 	#tab-2-content .tab-2-content-bottom {
 		grid-template-columns: 1fr;
 	}
+
+	.showcase::after {
+		box-shadow: inset 80px 80px 250px #000, inset -80px -80px 250px #000;
+	}
 }
