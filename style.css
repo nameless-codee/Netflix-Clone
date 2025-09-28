@@ -313,15 +313,15 @@ img {
 
 /* ==== Font Styles ==== */
 .text-sm {
-	font-size: 0.8rem;
+	font-size: clamp(0.8rem, 0.8vw, 0.9rem);
 }
 
 .text-md {
-	font-size: 1.1rem;
+	font-size: clamp(0.95rem, 1.2vw, 1.1rem);
 }
 
 .text-lg {
-	font-size: 1.2rem;
+	font-size: clamp(1rem, 1.4vw, 1.25rem);
 }
 
 .text-dark {
@@ -391,5 +391,9 @@ img {
 	#tab-1-content .tab-content-inner {
 		grid-template-columns: 1fr;
 		text-align: center;
+	}
+
+	#tab-1-content .tab-content-inner img {
+		justify-self: center;
 	}
 }
