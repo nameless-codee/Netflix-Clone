@@ -195,6 +195,7 @@ img {
 }
 
 /* ==== Tab Content ==== */
+/* ==== Tab Content 1 ==== */
 #tab-1-content .tab-content-inner {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -208,11 +209,12 @@ img {
 	padding: 0 2rem;
 }
 
-.tab-content-inner img {
+#tab-1-content .tab-content-inner img {
 	width: 70%;
 	justify-self: end;
 }
 
+/* ==== Tab Content 2 ==== */
 #tab-2-content .tab-2-content-top {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -222,7 +224,7 @@ img {
 }
 
 #tab-2-content .tab-2-content-bottom {
-	margin-top: 3rem;
+	margin-top: 2rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2rem;
@@ -231,7 +233,44 @@ img {
 	text-align: center;
 }
 
+/* ==== Tab Content 3 ==== */
+#tab-3-content .text-center {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.table {
+	width: 100%;
+	margin-top: 2rem;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.table thead th {
+	text-transform: uppercase;
+	padding: 0.8rem;
+}
+
+.table tbody tr td {
+	color: #999;
+	padding: 0.6rem 1.2rem;
+	text-align: center;
+}
+
+.table tbody tr td:first-child {
+	text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+	background: #222;
+}
+
 /* ==== Font Styles ==== */
+.text-sm {
+	font-size: 0.8rem;
+}
+
 .text-md {
 	font-size: 1.1rem;
 }
