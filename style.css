@@ -177,7 +177,7 @@ img {
 }
 
 .tabs .container i {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 .tabs .container > div {
@@ -196,6 +196,10 @@ img {
 
 /* ==== Tab Content ==== */
 /* ==== Tab Content 1 ==== */
+.tab-content {
+	padding: 1rem 0;
+}
+
 #tab-1-content .tab-content-inner {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -266,6 +270,33 @@ img {
 	background: #222;
 }
 
+/* ==== Footer ==== */
+.footer {
+	background: var(--dark-color);
+	color: #fff;
+	margin-top: 2rem;
+	padding: 2rem 1rem;
+	overflow: auto;
+}
+
+.footer a {
+	font-size: 0.8rem;
+}
+
+.footer p {
+	margin-bottom: 2rem;
+}
+
+.footer .footer-cols {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
 /* ==== Font Styles ==== */
 .text-sm {
 	font-size: 0.8rem;
@@ -311,4 +342,8 @@ img {
 	font-size: 1.3rem;
 	padding: 0.8rem 1.3rem;
 	letter-spacing: 0.5px;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 960px) {
 }
