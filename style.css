@@ -111,23 +111,23 @@ img {
 	font-weight: 700;
 	font-size: clamp(2.5rem, calc(6vw - 1rem), 4.2rem);
 	line-height: 1.1;
-	margin: 0 0 1.1rem;
+	margin: 0 0 clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 .showcase-content h6 {
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: clamp(0.9rem, 1.5vw, 1.25rem);
 	line-height: 1.25;
-	margin: 0 0 2rem;
+	margin: 0 0 clamp(1rem, 2.5vw, 2rem);
 }
 
 .showcase-content p {
 	font-family: "Segoe UI", sans-serif;
 	color: #fff;
 	font-weight: 400;
-	font-size: 1rem;
+	font-size: clamp(0.8rem, 1vw, 1rem);
 	line-height: 1.25;
-	margin: 0 0 1.3rem;
+	margin: 0 0 clamp(0.8rem, 1.8vw, 1.3rem);
 }
 
 .form {
@@ -182,7 +182,8 @@ img {
 }
 
 .tabs .container i {
-	font-size: 2rem;
+	font-size: clamp(1.25rem, 1.5vw + 1rem, 2rem);
+	line-height: 1;
 }
 
 .tabs .container > div {
@@ -257,14 +258,22 @@ img {
 }
 
 .table thead th {
+	font-size: clamp(0.8rem, 1.2vw, 1rem);
+	padding: clamp(0.6rem, 1.2vw, 0.8rem);
 	text-transform: uppercase;
-	padding: 0.8rem;
 }
 
 .table tbody tr td {
 	color: #999;
-	padding: 0.6rem 1.2rem;
+	font-size: clamp(0.85rem, 1vw, 1rem);
+	padding: clamp(0.5rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1.2rem);
+	line-height: 1.3;
 	text-align: center;
+}
+
+.table tbody tr td i {
+	font-size: 1em;
+	line-height: 1;
 }
 
 .table tbody tr td:first-child {
@@ -369,5 +378,18 @@ img {
 
 	.form {
 		grid-template-columns: 5fr 3fr;
+	}
+
+	.footer .footer-cols {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem;
+	}
+}
+
+@media (max-width: 700px) {
+	#tab-1-content .tab-content-inner {
+		grid-template-columns: 1fr;
+		text-align: center;
 	}
 }
