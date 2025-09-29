@@ -203,11 +203,22 @@ img {
 }
 
 /* ==== Tab Content ==== */
-/* ==== Tab Content 1 ==== */
 .tab-content {
 	padding: 1rem 0;
 }
 
+/* Hide content initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+	display: none;
+}
+
+.show {
+	display: block !important;
+}
+
+/* ==== Tab Content 1 ==== */
 #tab-1-content .tab-content-inner {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
