@@ -57,12 +57,10 @@ Netflix Clone/
 - Update copy in `index.html` (hero text, pricing rows, footer links).
 - Adjust colors in `:root` within `style.css`.
 
-## Screenshots (optional)
-
-Add a screenshot to showcase the UI:
+## Screenshots
 
 ```
-![Netflix Clone Screenshot](public/bg.jpg)
+![Netflix Clone Screenshot](SS.png)
 ```
 
 ## Acknowledgments
