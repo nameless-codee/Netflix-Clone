@@ -59,7 +59,9 @@ Netflix Clone/
 
 ## Screenshots
 
-![Netflix Clone Screenshot](SS.png)
+![Netflix Clone Screenshot](Screenshots/SS-1.png)
+![Netflix Clone Screenshot](Screenshots/SS-2.png)
+![Netflix Clone Screenshot](Screenshots/SS-3.png)
 
 ## Acknowledgments
 
